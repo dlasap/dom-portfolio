@@ -1,3 +1,39 @@
 .App {
+  justify-content: center;
+  align-items: center;
   letter-spacing: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  gap: 10px;
+  height: 100vh;
+}
+
+.App > * {
+  height: 100%;
+}
+.Header {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-content: center;
+  background-color: rgb(224, 211, 150);
+}
+
+.Aside {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  background-color: yellow;
+}
+.Content {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  background-color: orange;
+}
+
+.Footer {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  background-color: rgb(121, 100, 9);
 }
