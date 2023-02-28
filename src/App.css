@@ -1,39 +1,51 @@
 .App {
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
   letter-spacing: 2px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr 0.2fr;
   text-align: center;
-  gap: 10px;
-  height: 100vh;
+  /* gap: 0.1em; */
+  height: 100svh;
+  /* background: rgb(61, 88, 100); */
+  /* background: url(../src/assets/bg2.png); */
+  background: linear-gradient(to right, #46693c, rgb(207, 226, 207));
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  background-position: 20% 100%;
+  text-shadow: 1px 1px rgb(3, 2, 2);
+
+  /* height: 100vh; */
 }
 
 .App > * {
-  height: 100%;
 }
 .Header {
   grid-column: 1/4;
   grid-row: 1/2;
   justify-content: center;
-  background-color: rgb(224, 211, 150);
+  background-color: transparent;
+  padding: 0 2em;
+  color: white;
 }
 
 .Aside {
   grid-column: 1/2;
   grid-row: 2/4;
-  background-color: yellow;
+  background-color: transparent;
+  color: white;
 }
 .Content {
   grid-column: 2/4;
   grid-row: 2/4;
-  background-color: orange;
+  /* background-color: orange; */
+  background-color: transparent;
 }
 
 .Footer {
   grid-column: 1/4;
   grid-row: 4/5;
-  background-color: rgb(121, 100, 9);
+  background-color: rgba(7, 51, 3, 1);
 }

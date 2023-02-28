@@ -1,0 +1,13 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section {
+  justify-self: flex-end;
+  align-self: center;
+  justify-self: flex-end;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid rgb(25, 53, 25);
+}
