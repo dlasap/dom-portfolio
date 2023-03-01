@@ -8,9 +8,9 @@
   text-align: center;
   /* gap: 0.1em; */
   height: 100svh;
-  background: url(./assets/Download\ size\ \ \ 1920x1200.jpeg);
-  /* background: rgb(61, 88, 100); */
-  /* background: url(../src/assets/bg2.png); */
+  /* background: url(./assets/Download\ size\ \ \ 1920x1200.jpeg); */
+  background: rgb(130, 166, 183);
+  background: url(../src/assets/pexels-deepu-b-iyer-40465.jpg);
   /* background: linear-gradient(to right, #24335e, rgb(30, 136, 95)); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,14 +29,14 @@
   justify-content: center;
   background-color: transparent;
   padding: 0 2em;
-  color: white;
+  color: #e6f8ff;
 }
 
 .Aside {
   grid-column: 1/2;
   grid-row: 2/4;
   background-color: transparent;
-  color: white;
+  color: #e6f8ff;
 }
 .Content {
   grid-column: 2/4;
@@ -48,5 +48,20 @@
 .Footer {
   grid-column: 1/4;
   grid-row: 4/5;
-  background-color: rgba(43, 49, 80, 0.75);
+  background-color: rgba(33, 89, 115, 0.7);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .Aside {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    /* background: black; */
+  }
+  .Content {
+    justify-self: center;
+    grid-column: 1/4;
+    grid-row: 3/5;
+    max-width: 1rem;
+    margin-bottom: 1rem;
+  }
 }

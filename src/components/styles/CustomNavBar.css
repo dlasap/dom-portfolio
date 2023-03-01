@@ -8,10 +8,11 @@
   width: 23rem;
   height: 4em;
   position: relative;
-  background: #0d180f;
+  background: #033853;
   display: flex;
   z-index: 1;
   border-radius: 10rem;
+  text-shadow: none;
 }
 
 .navigation ul {
@@ -58,7 +59,8 @@
 }
 .navigation ul li.active a .icon {
   transform: translateY(-8px);
-  color: #29fd53;
+  /* color: #29fd53; */
+  color: #e6f8ff;
 }
 .navigation ul li a .text {
   position: absolute;
@@ -96,8 +98,8 @@
   bottom: 14px;
   width: 80%;
   height: 16px;
-  background: #03a9f4;
-  background: #29fd53;
+  background: #e6f8ff;
+  /* background: #29fd53; */
   border-radius: 10px;
 }
 
