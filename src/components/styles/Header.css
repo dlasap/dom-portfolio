@@ -2,6 +2,9 @@
   justify-content: space-between;
   align-items: center;
   display: flex;
+  color: rgb(12, 177, 149);
+  font-style: oblique;
+  font-size: small;
 }
 
 .menu-container {

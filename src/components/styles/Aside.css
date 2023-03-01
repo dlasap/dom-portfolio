@@ -1,34 +1,68 @@
 .aside-container {
   text-align: left;
   /* padding-left: 7em; */
-  padding-left: 30%;
+  padding-left: 5em;
   display: flex;
   flex-direction: column;
-  padding-top: 2em;
+  margin-top: -2em;
+  /* padding-top: -2em; */
+  height: 100%;
+  font-size: 1.25rem;
+  justify-content: center;
+  color: rgb(241, 245, 241);
+  text-shadow: 1px 1px black;
 }
-
+p {
+  font-size: 1rem;
+  font-weight: bold;
+}
 .aside-content-container {
   display: flex;
   gap: 1rem;
 }
 
-div p {
-  font-size: 1.3rem;
-  font-style: oblique;
+.name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
 }
+
 #name {
-  color: rgb(216, 213, 32);
+  color: #ecf1bcfb;
   font-style: normal;
-  font-size: 2rem;
-  text-shadow: 1px 1px rgb(3, 3, 2);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px rgb(7, 7, 7);
 }
 #job-title {
-  color: yellow;
+  color: #39ca64;
+  font-size: 0.7rem;
+  margin-top: -1.5rem;
   font-weight: bold;
+  text-shadow: 1px 1px black;
+  padding-bottom: 2rem;
 }
 
 .aside-content-container {
   margin-top: -1em;
   display: flex;
   flex-direction: column;
+}
+
+.hire-Link {
+  width: 7rem;
+  height: 2rem;
+  letter-spacing: 0.1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  background-color: #199c40;
+  color: rgb(235, 231, 197);
+  border: none;
+}
+
+.hire-Link:hover {
+  transition: 0.5s all ease-out;
+  color: black;
+  background-color: #9dddb0;
+  cursor: pointer;
 }

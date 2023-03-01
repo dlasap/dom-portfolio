@@ -1,16 +1,35 @@
-import react, { useState } from "react";
+import react, { useEffect, useState } from "react";
 import "./styles/CustomNavBar.css";
-import { Link, Navigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const CustomNavBar = () => {
   const [toggle, setToggle] = useState([true, false, false, false]);
-
+  const loc = useLocation();
   const resetToggle = (index) => {
     const neg_arr = [false, false, false, false];
     neg_arr[index] = true;
     setToggle(neg_arr);
   };
-  console.log(toggle);
+
+  const url = loc.pathname.split("/").pop();
+
+  useEffect(() => {
+    const mapped_nav = {
+      profile: 0,
+      resume: 1,
+      works: 2,
+      contact: 3,
+    };
+    const neg_arr = [false, false, false, false];
+    if (url === "") {
+      neg_arr[0] = true;
+      setToggle(neg_arr);
+    } else {
+      neg_arr[mapped_nav[url]] = true;
+      setToggle(neg_arr);
+    }
+  }, [url]);
+
   return (
     <div className="navigation">
       <ul>
@@ -60,7 +79,7 @@ const CustomNavBar = () => {
           }}
           className={toggle[3] ? "list active" : "list"}
         >
-          <Link to="contact">
+          <Link to="/contact">
             <span className="icon">
               <ion-icon name="call-outline"></ion-icon>
             </span>

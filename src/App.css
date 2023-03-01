@@ -3,14 +3,15 @@
   letter-spacing: 2px;
   /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   display: grid;
-  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.25fr 1fr 1fr 0.35fr;
   text-align: center;
   /* gap: 0.1em; */
   height: 100svh;
+  background: url(./assets/Download\ size\ \ \ 1920x1200.jpeg);
   /* background: rgb(61, 88, 100); */
   /* background: url(../src/assets/bg2.png); */
-  background: linear-gradient(to right, #374928, rgb(128, 153, 128));
+  /* background: linear-gradient(to right, #24335e, rgb(30, 136, 95)); */
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -47,5 +48,5 @@
 .Footer {
   grid-column: 1/4;
   grid-row: 4/5;
-  background-color: rgba(7, 51, 3, 1);
+  background-color: rgba(43, 49, 80, 0.75);
 }

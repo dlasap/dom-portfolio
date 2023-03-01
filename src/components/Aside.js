@@ -1,18 +1,22 @@
 import react from "react";
 import "./styles/Aside.css";
+import { Link, Navigate } from "react-router-dom";
 
 const Aside = () => {
   return (
     <>
       <div className="aside-container">
-        <h2 id="job-title">Software Engineer</h2>
-        <h3>
-          Hey there! I'm<p id="name">Dominic Gabriel Lasap</p>
-        </h3>
+        <div>
+          <h5>Hey there! I'm</h5>
+          <h1 id="name">Dominic Gabriel Lasap</h1>
+          <p id="job-title">Software Engineer</p>
+        </div>
 
         <div className="aside-content-container">
-          <article> A Filipino Software Engineer passionate about creating efficient Web Applications using JavaScript frameworks.</article>
-          <button>Hire Me</button>
+          <p> A Filipino Software Engineer passionate about creating efficient Web Applications using JavaScript frameworks.</p>
+          <Link to="/contact">
+            <button className="hire-Link">Hire Me</button>
+          </Link>
           <div> Links / Icons</div>
         </div>
       </div>

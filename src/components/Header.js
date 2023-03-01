@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <div className="header-container">
-        <h1>DGL</h1>
+        <h1>dgl</h1>
         {/* <CustomNavBar /> */}
         {/* <div className="menu-container">
           <h3>home</h3>
