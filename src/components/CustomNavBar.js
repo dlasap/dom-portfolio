@@ -1,11 +1,6 @@
 import react, { useState } from "react";
 import "./styles/CustomNavBar.css";
-const list = document.querySelectorAll(".list");
-// function activelink() {
-//   list.forEach((item) => item.classList.remove("active"));
-//   this.classList.add("active");
-// }
-// list.forEach((item) => item.addEventListener("click", activelink));
+import { Link, Navigate } from "react-router-dom";
 
 const CustomNavBar = () => {
   const [toggle, setToggle] = useState([true, false, false, false]);
@@ -19,37 +14,58 @@ const CustomNavBar = () => {
   return (
     <div className="navigation">
       <ul>
-        <li onClick={() => resetToggle(0)} className={toggle[0] ? "list active" : "list"}>
-          <a href="#">
+        <li
+          onClick={() => {
+            resetToggle(0);
+            <Link to="/" />;
+          }}
+          className={toggle[0] ? "list active" : "list"}
+        >
+          <Link to="/">
             <span className="icon">
               <ion-icon name="person-circle-outline"></ion-icon>
             </span>
             <span className="text">Profile</span>
-          </a>
+          </Link>
         </li>
-        <li onClick={() => resetToggle(1)} className={toggle[1] ? "list active" : "list"}>
-          <a href="#">
+        <li
+          onClick={() => {
+            resetToggle(1);
+          }}
+          className={toggle[1] ? "list active" : "list"}
+        >
+          <Link to="/resume">
             <span className="icon">
               <ion-icon name="document-text-outline"></ion-icon>
             </span>
             <span className="text">Resume</span>
-          </a>
+          </Link>
         </li>
-        <li onClick={() => resetToggle(2)} className={toggle[2] ? "list active" : "list"}>
-          <a href="#">
+        <li
+          onClick={() => {
+            resetToggle(2);
+          }}
+          className={toggle[2] ? "list active" : "list"}
+        >
+          <Link to="/works">
             <span className="icon">
               <ion-icon name="code-slash-outline"></ion-icon>
             </span>
             <span className="text">Projects</span>
-          </a>
+          </Link>
         </li>
-        <li onClick={() => resetToggle(3)} className={toggle[3] ? "list active" : "list"}>
-          <a href="#">
+        <li
+          onClick={() => {
+            resetToggle(3);
+          }}
+          className={toggle[3] ? "list active" : "list"}
+        >
+          <Link to="contact">
             <span className="icon">
               <ion-icon name="call-outline"></ion-icon>
             </span>
             <span className="text">Contact</span>
-          </a>
+          </Link>
         </li>
         <div className="indicator"></div>
       </ul>

@@ -11,7 +11,7 @@ const Content = () => {
       <div className="content-container">
         <Routes>
           <Route path="/" element={<img className="image-section" src={img} height={500} />} />
-          <Route path="/profile" element={<iframe className="pdf-sec" src={pdf_file} type="application/pdf" width={"95%"} />} />
+          <Route path="/resume" element={<embed className="pdf-sec" src={pdf_file} type="application/pdf" width={"95%"} />} />
         </Routes>
       </div>
     </>
