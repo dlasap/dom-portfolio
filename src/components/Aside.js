@@ -14,9 +14,11 @@ const Aside = () => {
 
         <div className="aside-content-container">
           <p> A Filipino Software Engineer passionate about creating efficient Web Applications using JavaScript frameworks.</p>
-          <Link to="/contact">
-            <button className="hire-Link">Hire Me</button>
+
+          <Link className="hire-Link" to="/contact">
+            Hire Me
           </Link>
+
           <div> Links / Icons</div>
         </div>
       </div>

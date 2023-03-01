@@ -8,7 +8,7 @@
   width: 23rem;
   height: 4em;
   position: relative;
-  background: #033853;
+  background: #502841;
   display: flex;
   z-index: 1;
   border-radius: 10rem;
@@ -69,7 +69,7 @@
   font-size: 0.6em;
   letter-spacing: 0.05em;
   transition: 0.5s;
-  color: #222327;
+  color: #420f21;
   text-transform: uppercase;
   font-weight: 600;
   transform: translateY(0px);

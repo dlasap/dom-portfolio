@@ -11,7 +11,7 @@ const Content = () => {
       {" "}
       <div className="content-container">
         <Routes>
-          <Route path="/" element={<img className="image-section" src={img} height={650} />} />
+          <Route path="/" element={<img className="image-section" src={img} />} />
           <Route
             path="/resume"
             element={

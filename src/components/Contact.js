@@ -18,12 +18,12 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <h3 className="header">Contact Me</h3>
-      <Paper className="Paper" elevation={10}>
+      <Paper className="Paper" elevation={0} sx={{ border: "none", backgroundColor: "rgba(155, 84, 157, 0.0)" }}>
         <form action="https://formsubmit.co/lasapdominic@gmail.com" method="POST">
           <div className="contact-form-container">
             <div className="name">
               <TextField
-                sx={{ width: "100%" }}
+                sx={{ width: "100%", background: "white" }}
                 id="fname"
                 onChange={(e) => handleInput(e)}
                 value={formData.fname}
@@ -37,7 +37,7 @@ const Contact = () => {
             <div className="email">
               <TextField
                 id="email"
-                sx={{ width: "100%" }}
+                sx={{ width: "100%", background: "white" }}
                 onChange={(e) => handleInput(e)}
                 value={formData.email}
                 name="_subject"
@@ -49,7 +49,7 @@ const Contact = () => {
             </div>
             <div className="subject">
               <TextField
-                sx={{ width: "100%" }}
+                sx={{ width: "100%", background: "white" }}
                 id="subject"
                 onChange={(e) => handleInput(e)}
                 value={formData.subject}
@@ -61,7 +61,7 @@ const Contact = () => {
             </div>
             <div className="message">
               <TextField
-                sx={{ width: "100%", height: "100%" }}
+                sx={{ width: "100%", height: "100%", background: "white" }}
                 id="message"
                 onChange={(e) => handleInput(e)}
                 value={formData.message}
@@ -70,7 +70,8 @@ const Contact = () => {
                 rows={4}
                 type="text"
                 name="message"
-                defaultValue="Hi..."
+                defaultValue=""
+                required
               />{" "}
             </div>
             <button type="submit" className="submit-btn">
@@ -79,6 +80,17 @@ const Contact = () => {
           </div>
         </form>
       </Paper>
+      <ul className="list-contact">
+        <li>
+          <ion-icon name="call-outline"></ion-icon> Phone: +63 905 561 0116 &#127477;&#127469;
+        </li>
+        <li>
+          <ion-icon name="mail-outline"></ion-icon> Email: lasapdominic@gmail.com
+        </li>
+        <li>
+          <ion-icon name="location-outline"></ion-icon> Location: Cebu, Philippines &#127477;&#127469;
+        </li>
+      </ul>
     </div>
   );
 };

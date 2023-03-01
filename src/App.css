@@ -10,7 +10,8 @@
   height: 100svh;
   /* background: url(./assets/Download\ size\ \ \ 1920x1200.jpeg); */
   background: rgb(130, 166, 183);
-  background: url(../src/assets/pexels-deepu-b-iyer-40465.jpg);
+  /* background: url(../src/assets/pexels-patricia-lazaro-424184.jpg); */
+  background: url(../src/assets/pexels-finn-protzmann-2197889.jpg);
   /* background: linear-gradient(to right, #24335e, rgb(30, 136, 95)); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +49,7 @@
 .Footer {
   grid-column: 1/4;
   grid-row: 4/5;
-  background-color: rgba(33, 89, 115, 0.7);
+  background-color: rgba(50, 49, 49, 0.3);
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {

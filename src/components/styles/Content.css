@@ -15,8 +15,11 @@
   justify-self: flex-end;
   bottom: 0;
   border-radius: 50%;
-  border: 0.3rem solid rgb(32, 53, 70);
+  border: 0.3rem solid rgb(65, 26, 61);
   height: 75%;
+  min-width: 10px;
+  min-height: 10px;
+  max-height: 60vh;
 }
 
 .pdf-sec {

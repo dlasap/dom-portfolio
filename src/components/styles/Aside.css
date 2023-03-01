@@ -9,12 +9,11 @@
   height: 100%;
   font-size: 1.25rem;
   justify-content: center;
-  color: #e6f8ff;
-  text-shadow: none;
+  color: #f4f8fa;
+  text-shadow: 1px 1px rgb(0, 0, 0);
 }
 p {
   font-size: 1rem;
-  font-weight: bold;
 }
 .aside-content-container {
   display: flex;
@@ -29,13 +28,13 @@ p {
 }
 
 #name {
-  color: #127488;
+  color: #fbf8f8;
   font-style: normal;
   font-size: 2.5rem;
-  text-shadow: 2px 2px rgb(8, 27, 121);
+  text-shadow: 2px 2px rgb(94, 16, 128);
 }
 #job-title {
-  color: #033c57;
+  color: #7f3c70;
   font-size: 0.7rem;
   margin-top: -1.5rem;
   font-weight: bold;
@@ -51,18 +50,22 @@ p {
 
 .hire-Link {
   width: 7rem;
-  height: 2rem;
+  height: 1.7rem;
   letter-spacing: 0.1rem;
   border-radius: 50px;
   font-weight: bold;
-  background-color: #e6f8ff;
-  color: rgb(47, 62, 86);
+  background-color: #9b549d;
+  color: rgb(14, 20, 20);
   border: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+  text-shadow: none;
 }
 
 .hire-Link:hover {
   transition: 0.5s all ease-out;
-  color: rgb(244, 241, 241);
-  background-color: #071048;
+  color: rgb(244, 241, 244);
+  background-color: #d810b3;
   cursor: pointer;
 }
