@@ -2,12 +2,20 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(52, 29, 46, 0.7);
-  width: 90%;
-  max-height: 130%;
+  width: 97%;
+  max-height: 100%;
   gap: 0;
   margin: 0;
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 
+span {
+  padding: 0;
+  margin: 0;
+}
 h2 {
   align-self: center;
   flex-grow: 0;
@@ -32,61 +40,73 @@ h2 {
 }
 
 .work-item {
+  margin: 0.5rem;
   align-self: flex-start;
   display: flex;
   flex-grow: 1;
   align-items: center;
   width: 97%;
-  height: 100%;
   justify-content: center;
+  max-height: 13rem;
 }
 
 .work-title {
-  font-size: 1.25rem;
-  width: 45%;
-  max-height: 40%;
-  border-right: 2px solid rgb(202, 129, 202);
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-right: 2px solid rgb(193, 88, 182);
   padding: 0 0.5rem 0 0;
-  margin: -1rem 0 0 0;
+  margin: 0.5rem 0 0 0;
   text-align: left;
   color: rgb(230, 196, 222);
   font-weight: 500;
-  text-shadow: none;
-  border-bottom: 2px solid rgb(247, 246, 246);
+  /* text-shadow: 1px 1px yellow; */
+  border-bottom: 2px solid rgb(255, 255, 255);
+  max-height: 13%;
 }
 
+.work-title p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(215, 53, 236);
+  /* text-shadow: 1px 1px rgb(87, 11, 105); */
+  text-shadow: none;
+}
 .work-desc {
+  justify-self: center;
+  align-self: center;
   padding: 0rem 1rem;
-  margin: 1rem 0 0 0;
+  margin: 0 0 0 0;
   flex-grow: 1;
-  display: inline-flex;
+  display: flex;
   color: rgb(240, 241, 247);
   text-shadow: none;
   font-size: 0.7rem;
   width: 100%;
-  height: 100%;
   text-align: justify;
-  justify-self: center;
-  align-self: center;
   justify-content: center;
-  border-bottom: 2px solid rgb(247, 246, 246);
+  align-items: center;
+  /* border-bottom: 2px solid rgb(247, 246, 246); */
 }
 
 .tech-stack {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   max-width: fit-content;
   /* background-color: white; */
-  color: rgb(247, 242, 242);
+  color: rgb(17, 2, 2);
   display: flex;
   gap: 0.3rem;
   flex-wrap: wrap;
+  padding-top: 1rem;
   padding-bottom: 0.5rem;
   width: 100%;
 }
 
 .tech-item {
-  background: white;
-  padding: 0.1rem 0.3rem;
-  color: rgb(26, 3, 26);
+  background: rgb(243, 241, 242);
+  padding: 0.01rem 0.25rem;
+  color: rgb(14, 10, 14);
   border-radius: 2rem;
+  text-shadow: none;
+  font-weight: bold;
 }
