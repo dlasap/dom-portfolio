@@ -1,0 +1,62 @@
+.works-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(52, 29, 46, 0.7);
+  width: 90%;
+  height: 100%;
+  gap: 0;
+  margin: 0;
+}
+.tech-stack {
+  color: green;
+  font-size: 0.7rem;
+  max-width: fit-content;
+  background-color: white;
+  color: red;
+}
+
+h2 {
+  align-self: center;
+  flex-grow: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  border-bottom: 2px white solid;
+  text-shadow: 1px 1px rgb(192, 95, 194);
+  /* background: rgba(31, 12, 24, 0.8); */
+  width: 90%;
+}
+
+.worklist {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.work-item {
+  align-self: flex-start;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+
+.work-title {
+  font-size: 1.5rem;
+  width: 40%;
+  height: 4rem;
+  border-right: 2px solid rgb(233, 61, 230);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: rgb(241, 236, 236);
+  text-shadow: 1px 1px rgb(255, 206, 252);
+}
+
+.work-desc {
+  flex-grow: 1;
+}

@@ -4,6 +4,7 @@ import "./styles/Content.css";
 import pdf_file from "../assets/Official Resume - Dominic Lasap.pdf";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./Contact";
+import Works from "./Works";
 
 const Content = () => {
   return (
@@ -21,6 +22,7 @@ const Content = () => {
               </>
             }
           />
+          <Route path="/works" element={<Works />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
