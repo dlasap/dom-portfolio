@@ -80,8 +80,8 @@ const Contact = () => {
           </div>
         </form>
       </Paper>
+      <p className="btm-head">Contact Details:</p>
       <ul className="list-contact">
-        Contact Details:
         <li>
           <ion-icon name="call-outline"></ion-icon> Phone: +63 905 561 0116 &#127477;&#127469;
         </li>

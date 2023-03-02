@@ -27,3 +27,24 @@
 .pdf-sec {
   flex-grow: 1;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .image-section {
+    align-self: center;
+    border-radius: 50%;
+    border: 0.3rem solid rgb(65, 26, 61);
+    min-width: 10px;
+    min-height: 20%;
+    max-height: 65%;
+    margin-top: -3rem;
+  }
+
+  .pdf-sec {
+    margin-top: -5rem;
+    flex-grow: 0;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    z-index: 1;
+  }
+}

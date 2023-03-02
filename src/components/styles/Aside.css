@@ -34,7 +34,7 @@ p {
   text-shadow: 2px 2px rgb(94, 16, 128);
 }
 #job-title {
-  color: #7f3c70;
+  color: #4b1d41;
   font-size: 0.7rem;
   margin-top: -1.5rem;
   font-weight: bold;
@@ -80,4 +80,46 @@ p {
 .l-icon a {
   color: white;
   font-size: 2rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .aside-container {
+    text-align: center;
+    padding: 0em 1.25em;
+    display: flex;
+    flex-direction: column;
+    margin-top: -2.7em;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .aside-content-container {
+    margin-top: -1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #job-title {
+    margin: 0;
+  }
+
+  .hire-Link {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .links-icons {
+    align-self: center;
+    justify-self: center;
+  }
 }

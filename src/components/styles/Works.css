@@ -114,3 +114,28 @@ h2 {
   text-shadow: none;
   font-weight: bold;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .works-container {
+    margin-top: -4rem;
+    display: flex;
+    width: 97vw;
+    height: 80%;
+    overflow: auto;
+  }
+
+  .work-title {
+    max-width: 30%;
+    word-wrap: break-word;
+  }
+
+  .work-title p {
+    font-size: 10px;
+  }
+  .work-desc {
+    font-size: 9px;
+  }
+
+  .tech-stack {
+    font-size: 0.45rem;
+  }
+}

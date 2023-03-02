@@ -115,3 +115,16 @@
 .navigation ul li:nth-child(5).active ~ .indicator {
   transform: translateX(calc(80px * 4));
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .navigation {
+    width: 23rem;
+    height: em;
+    position: relative;
+    background: #502841;
+    display: flex;
+    z-index: 1;
+    border-radius: 10rem;
+    text-shadow: none;
+  }
+}

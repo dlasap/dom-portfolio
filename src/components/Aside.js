@@ -1,8 +1,12 @@
 import react from "react";
 import "./styles/Aside.css";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 
 const Aside = () => {
+  const loc = useLocation();
+  const url = loc.pathname.split("/").pop();
+
+  console.log(url);
   return (
     <>
       <div className="aside-container">
@@ -15,9 +19,11 @@ const Aside = () => {
         <div className="aside-content-container">
           <p> A Filipino Software Engineer passionate about creating efficient Web Applications using JavaScript frameworks.</p>
 
-          <Link className="hire-Link" to="/contact">
-            Hire Me
-          </Link>
+          {url !== "contact" && (
+            <Link className="hire-Link" to="/contact">
+              Hire Me
+            </Link>
+          )}
 
           <div className="links-icons">
             <li className="l-icon">

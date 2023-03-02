@@ -12,3 +12,15 @@
   display: flex;
   gap: 1rem;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: #ffe6f9;
+    font-style: oblique;
+    font-size: 0.5rem;
+    text-shadow: 1px 1px rgb(104, 50, 90);
+  }
+}
