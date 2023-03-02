@@ -13,7 +13,11 @@ const Works = () => {
         <ul className="worklist">
           <li className="work-item">
             <span className="work-title">
-              <p>Contact Management App</p>
+              <p>
+                <a href="https://fs-cms-fe.onrender.com/" target={"_blank"}>
+                  Contact Management App<ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </a>
+              </p>
               <div className="tech-stack">
                 <li className="tech-item">ReactJS</li>
                 <li className="tech-item">NodeJS</li>
@@ -25,9 +29,9 @@ const Works = () => {
               </div>
             </span>
             <p className="work-desc">
-              The project was personally made so we could practice our Tech Stacks. It was also a challenge since we needed to deploy it and
-              containerize it with docker and deployed to Heroku. The project was simple and should demonstrate basic CRUD functionalities which have
-              API calls to my Node Backend with ExpressJS.{" "}
+              The project was personally made so we could practice our Tech Stacks. It was also a challenge since we needed to deploy it to Heroku and
+              containerize it with docker. The project was simple and should demonstrate basic CRUD functionalities which have API calls from my
+              frontend to my backend.{" "}
             </p>
           </li>
           <li className="work-item">

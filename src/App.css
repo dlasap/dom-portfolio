@@ -53,6 +53,10 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .App {
+    height: 110vh;
+  }
+
   .Aside {
     grid-column: 1/4;
     grid-row: 2/3;

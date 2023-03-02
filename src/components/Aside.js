@@ -19,7 +19,28 @@ const Aside = () => {
             Hire Me
           </Link>
 
-          <div> Links / Icons</div>
+          <div className="links-icons">
+            <li className="l-icon">
+              <a target="_blank" href="https://www.linkedin.com/in/dominic-gabriel-lasap-07655a199/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li className="l-icon">
+              <a target="_blank" href="https://github.com/dlasap">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li className="l-icon">
+              <a target="_blank" href="https://www.facebook.com/dominiclasap/">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li className="l-icon">
+              <a target="_blank" href="https://www.youtube.com/channel/UCwEu-BZyQ1hObZY_n_Dz3GQ">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </div>
         </div>
       </div>
     </>

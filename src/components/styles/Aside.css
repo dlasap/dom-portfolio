@@ -69,3 +69,15 @@ p {
   background-color: #d810b3;
   cursor: pointer;
 }
+
+.links-icons {
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  display: flex;
+  gap: 0.35rem;
+}
+
+.l-icon a {
+  color: white;
+  font-size: 2rem;
+}

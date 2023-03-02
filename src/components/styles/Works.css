@@ -12,6 +12,10 @@ p {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(230, 196, 222);
+}
 span {
   padding: 0;
   margin: 0;
