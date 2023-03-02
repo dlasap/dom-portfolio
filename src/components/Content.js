@@ -17,8 +17,8 @@ const Content = () => {
             path="/resume"
             element={
               <>
-                <p style={{ padding: 0, margin: 0, fontSize: "1rem" }}> RESUME</p>
-                <embed className="pdf-sec" src={pdf_file} type="application/pdf" width={"65%"} />
+                <p style={{ padding: 0, margin: 0, fontSize: "2.5rem" }}> RESUME</p>
+                <embed className="pdf-sec" src={pdf_file} type="application/pdf" width={"70%"} />
               </>
             }
           />
