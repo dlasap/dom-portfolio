@@ -21,7 +21,8 @@
   height: 75%;
   min-width: 10px;
   min-height: 10px;
-  max-height: 60vh;
+  max-height: 50%;
+  max-width: 100vw;
 }
 
 .pdf-sec {
